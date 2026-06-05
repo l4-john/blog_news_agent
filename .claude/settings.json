@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch",
+      "WebSearch",
+      "mcp__notion__create_page",
+      "mcp__notion__update_page",
+      "mcp__notion__get_page",
+      "mcp__notion__search",
+      "mcp__notion__query_database",
+      "Bash(grep -rn *)"
+    ]
+  }
+}
