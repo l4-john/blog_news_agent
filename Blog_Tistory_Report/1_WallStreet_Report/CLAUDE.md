@@ -11,9 +11,15 @@
 ## 오케스트레이터 실행 지침 (순차 실행 절대 엄수)
 당신은 아래 3단계 비서 호출을 순차적으로 통제하는 오케스트레이터입니다. 한 비서의 작업이 완전히 끝난 후 다음 비서를 호출하십시오.
 
-**[STEP 1: 데이터 수집]** `wallstreet-tistory-search` 비서를 호출하여 간밤의 지수 마감 데이터와 핵심 이슈 리서치를 지시하십시오.
-**[STEP 2: 본문 작성]** 수집이 완료되면 `wallstreet-tistory-writer` 비서를 호출하여 서술형 분석글(공백 제외 2,200자 ~ 2,700자) 작성을 지시하십시오.
-**[STEP 3: 저장 및 완료]** 작성이 완료되면 `wallstreet-tistory-saver` 비서를 호출하여 품질 검수, SEO 생성, Notion 저장, 푸터 삽입을 모두 지시하십시오. saver가 모든 후처리를 담당합니다. 최종 완료 보고 후 작업을 종료하십시오.
+**[STEP 1: 데이터 수집]** Agent 툴로 서브 에이전트를 실행하십시오. 해당 에이전트는 아래 파일을 Read한 뒤 지시를 따라야 합니다:
+`/Users/john/Developer/Claude/blog_news_agent/Blog_Tistory_Report/1_WallStreet_Report/1-wallstreet-tistory-search.md`
+
+**[STEP 2: 본문 작성]** 수집이 완료되면 Agent 툴로 서브 에이전트를 실행하십시오. 해당 에이전트는 아래 파일을 Read한 뒤 지시를 따라야 합니다:
+`/Users/john/Developer/Claude/blog_news_agent/Blog_Tistory_Report/1_WallStreet_Report/2-wallstreet-tistory-writer.md`
+
+**[STEP 3: 저장 및 완료]** 작성이 완료되면 Agent 툴로 서브 에이전트를 실행하십시오. 해당 에이전트는 아래 파일을 Read한 뒤 지시를 따라야 합니다:
+`/Users/john/Developer/Claude/blog_news_agent/Blog_Tistory_Report/1_WallStreet_Report/3-wallstreet-tistory-saver.md`
+saver가 모든 후처리를 담당합니다. 최종 완료 보고 후 작업을 종료하십시오.
 
 ## 글쓰기 핵심 원칙
 - 본문 최상단에 마크다운 인용구(`>`)로 핵심 요약 3줄 배치.
