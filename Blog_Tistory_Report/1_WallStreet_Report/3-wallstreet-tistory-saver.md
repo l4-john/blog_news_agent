@@ -22,10 +22,7 @@
 
 ### 3. SEO 메타데이터 및 AI 썸네일 프롬프트 작성
 🚨 아래 항목을 **모두** 생성한 뒤 Footer 안내문 바로 아래에 저장까지 완료해야 합니다. 생성만 하고 저장 생략 시 작업 미완료로 간주.
-- **메타 제목:** 검색 유입에 유리한 SEO 최적화 제목 (50자 이내)
-- **메타 설명:** 본문 핵심을 요약한 150자 내외 문장 (이모지·특수문자 금지)
-- **메타 태그:** writer가 인계한 키워드 후보 7개를 기반으로 확정. 후보가 없는 경우에만 직접 생성.
-- **이미지 Alt 태그:** 썸네일 업로드 시 입력할 1줄짜리 핵심 설명 (예: "YYYY년 MM월 DD일 미국 증시 S&P500 나스닥 마감 시황 및 월가 분석")
+- **메타 태그:** 반드시 **정확히 7개**로 확정. writer가 인계한 키워드 후보를 기반으로 하되, 부족하면 직접 추가 생성하여 7개를 채울 것. 7개 미만 저장 절대 금지.
 - 🎨 **AI 대표 이미지 프롬프트 (썸네일 / 영문):** "A dramatic and vibrant cartoon-illustration of Wall Street in chaos — a giant red plunging stock chart arrow dominates the scene, New York skyline in the background, oil barrels tumbling in the foreground, storm clouds gathering above. Bold and punchy composition. Color palette: bold red, deep navy, and warm gold. No text, no letters anywhere. Aspect ratio 16:9. If any text accidentally appears, it must be in Korean (Hangul), never English." — 당일 핵심 이슈(예: 금리 인상, 전쟁, 폭락 등)에 맞게 장면 묘사를 구체적으로 수정할 것.
 - 🎨 **AI 본문 이미지 프롬프트 (영문):** "A bright and colorful cartoon-editorial illustration of a chaotic Wall Street trading day. Multiple visual elements: plunging stock chart, Federal Reserve building, oil barrels, Middle East globe highlight, dollar bills scattering. Rich visual storytelling with dynamic composition. Color palette: bold red, deep navy, warm gold, and white. No specific numbers or text required. Aspect ratio 16:9. If any text accidentally appears, it must be in Korean (Hangul), never English." — [오늘의 핵심 주제] 부분을 당일 내용에 맞게 구체적으로 작성할 것.
 
@@ -44,16 +41,14 @@
 2. 🚨 **H2 소제목:** `## **{기사소제목}**` 형식으로 H1 바로 아래에 배치. 인용구(`>`)보다 반드시 먼저 작성.
 3. **핵심 요약 인용구:** `>` 블록쿼트 3줄을 H2 소제목 바로 아래에 배치.
 4. **본문:** 마크다운 포맷 원형 그대로 작성.
-5. 🚨 **Footer 안내문:** 본문 바로 아래에 아래 2줄을 표현 수정 없이 그대로 저장. 누락 또는 변경 시 저장 금지.
+5. 🚨 **Footer 안내문:** 본문 바로 아래에 아래 형식을 표현 수정 없이 그대로 저장. 누락 또는 변경 시 저장 금지.
+   `---`
    `본 콘텐츠는 투자 권유가 아닌 정보 제공 목적입니다.`
-   `**관련 글 더보기:** [이전 발행 글 링크를 삽입하세요]`
+   `---`
 6. 🚨 **SEO 메타데이터 블록:** Footer 안내문 바로 아래에 아래 형식으로 저장. 생략 절대 금지.
 
    📌 **SEO 메타데이터**
-   - 메타 제목: [내용]
-   - 메타 설명: [내용]
    - 메타 태그: [내용]
-   - 이미지 Alt 태그: [내용]
    - AI 대표 이미지 프롬프트 (썸네일): [내용]
    - AI 본문 이미지 프롬프트: [내용]
 7. 🚨 **오케스트레이터에게 완료 보고:** 저장 완료 후 아래 내용을 보고.
