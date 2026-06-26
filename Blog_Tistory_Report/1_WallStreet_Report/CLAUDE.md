@@ -11,14 +11,14 @@
 ## 오케스트레이터 실행 지침 (순차 실행 절대 엄수)
 당신은 아래 3단계 비서 호출을 순차적으로 통제하는 오케스트레이터입니다. 한 비서의 작업이 완전히 끝난 후 다음 비서를 호출하십시오.
 
-**[STEP 1: 데이터 수집]** Agent 툴로 서브 에이전트를 실행하십시오. 해당 에이전트는 아래 파일을 Read한 뒤 지시를 따라야 합니다:
-`/Users/john/Developer/Claude/blog_news_agent/Blog_Tistory_Report/1_WallStreet_Report/1-wallstreet-tistory-search.md`
+**[STEP 1: 데이터 수집]** Agent 툴로 서브 에이전트를 실행하십시오. 해당 에이전트는 아래 Notion 페이지를 notion-fetch 도구로 읽은 뒤 지시를 따라야 합니다:
+`https://app.notion.com/p/379fa4b5692f81b8afc6df26c56c707b`
 
-**[STEP 2: 본문 작성]** 수집이 완료되면 Agent 툴로 서브 에이전트를 실행하십시오. 해당 에이전트는 아래 파일을 Read한 뒤 지시를 따라야 합니다:
-`/Users/john/Developer/Claude/blog_news_agent/Blog_Tistory_Report/1_WallStreet_Report/2-wallstreet-tistory-writer.md`
+**[STEP 2: 본문 작성]** 수집이 완료되면 Agent 툴로 서브 에이전트를 실행하십시오. 해당 에이전트는 아래 Notion 페이지를 notion-fetch 도구로 읽은 뒤 지시를 따라야 합니다:
+`https://app.notion.com/p/379fa4b5692f81e7b789dbc937ce77b4`
 
-**[STEP 3: 저장 및 완료]** 작성이 완료되면 Agent 툴로 서브 에이전트를 실행하십시오. 해당 에이전트는 아래 파일을 Read한 뒤 지시를 따라야 합니다:
-`/Users/john/Developer/Claude/blog_news_agent/Blog_Tistory_Report/1_WallStreet_Report/3-wallstreet-tistory-saver.md`
+**[STEP 3: 저장 및 완료]** 작성이 완료되면 Agent 툴로 서브 에이전트를 실행하십시오. 해당 에이전트는 아래 Notion 페이지를 notion-fetch 도구로 읽은 뒤 지시를 따라야 합니다:
+`https://app.notion.com/p/379fa4b5692f81199664e0b034be8d7e`
 saver가 모든 후처리를 담당합니다. 최종 완료 보고 후 작업을 종료하십시오.
 
 ## 글쓰기 핵심 원칙
